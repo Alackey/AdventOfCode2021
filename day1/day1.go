@@ -2,7 +2,6 @@ package day1
 
 import (
 	"bufio"
-	"fmt"
 	"math"
 	"os"
 	"strconv"
@@ -16,7 +15,7 @@ func getInput() (*bufio.Scanner, error) {
 	return bufio.NewScanner(file), nil
 }
 
-// Part1 counts the number of times a depth measurement increases from 
+// Part1 counts the number of times a depth measurement increases from
 // the previous measurement
 func Part1() (int, error) {
 	scanner, err := getInput()
@@ -41,7 +40,7 @@ func Part1() (int, error) {
 	return count, nil
 }
 
-// Part2 counts the number of times the sum of measurements in this sliding 
+// Part2 counts the number of times the sum of measurements in this sliding
 // window increases from the previous sum
 func Part2() (int, error) {
 	scanner, err := getInput()
