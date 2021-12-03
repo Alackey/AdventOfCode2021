@@ -5,6 +5,7 @@ type line struct {
 	move      int
 }
 
+// Part1 returns the horizontal * depth position of the submarine
 func Part1(lines []*line) (int, error) {
 	var horizontal, depth int
 	for _, line := range lines {
@@ -20,6 +21,7 @@ func Part1(lines []*line) (int, error) {
 	return horizontal * depth, nil
 }
 
+// Part1 returns the horizontal * depth position of the submarine using aim
 func Part2(lines []*line) (int, error) {
 	var horizontal, aim, depth int
 	for _, line := range lines {
