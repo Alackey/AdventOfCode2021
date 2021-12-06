@@ -42,7 +42,7 @@ func Part1(lines []string) (int64, error) {
 	return gamma * epsilon, nil
 }
 
-// Part1 returns the life support rating (oxygen generator * CO2 scrubber rating) of the submarine
+// Part2 returns the life support rating (oxygen generator * CO2 scrubber rating) of the submarine
 func Part2(lines []string) (int64, error) {
 	sums := calculateSums(lines)
 

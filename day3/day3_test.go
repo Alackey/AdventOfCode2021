@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func t_partInput(t *testing.T) []string {
+func t_parseInput(t *testing.T) []string {
 	file, err := os.Open("input.txt")
 	if err != nil {
 		t.Errorf("Error opening file: %v", err)
@@ -23,7 +23,7 @@ func t_partInput(t *testing.T) []string {
 
 func TestPart1(t *testing.T) {
 	expected := int64(3959450)
-	actual, err := Part1(t_partInput(t))
+	actual, err := Part1(t_parseInput(t))
 
 	if err != nil {
 		t.Errorf("Error: %v", err)
@@ -36,7 +36,7 @@ func TestPart1(t *testing.T) {
 
 func TestPart2(t *testing.T) {
 	expected := int64(7440311)
-	actual, err := Part2(t_partInput(t))
+	actual, err := Part2(t_parseInput(t))
 
 	if err != nil {
 		t.Errorf("Error: %v", err)
